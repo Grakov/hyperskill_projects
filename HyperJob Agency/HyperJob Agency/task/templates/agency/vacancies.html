@@ -1,0 +1,7 @@
+{% include "agency/header.html" %}
+
+{% for vacancy in vacancies %}
+<div>{{ vacancy.author.username }}: {{ vacancy.description }}</div>
+{% endfor %}
+
+{% include "agency/footer.html" %}

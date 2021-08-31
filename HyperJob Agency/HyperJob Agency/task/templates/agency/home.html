@@ -1,0 +1,10 @@
+{% include "agency/header.html" %}
+
+<h2>{{ user.username }}</h2>
+<div>{{ user.email }}</div>
+<form method="GET" action="/resume/add">
+    {% csrf_token %}
+    <input type="submit" value="Create resume" />
+</form>
+
+{% include "agency/footer.html" %}

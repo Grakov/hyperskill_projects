@@ -1,0 +1,12 @@
+{% include "header.html %}
+{% for day in dates %}
+    <h4>{{ day.date }}</h4>
+
+    <ul>
+        {% for post in day.posts %}
+        <li><a href="/news/{{ post.link }}/">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endfor %}
+{% include "footer.html %}

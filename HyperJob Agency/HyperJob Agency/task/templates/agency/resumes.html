@@ -1,0 +1,7 @@
+{% include "agency/header.html" %}
+
+{% for resume in resumes %}
+<div>{{ resume.author.username }}: {{ resume.description }}</div>
+{% endfor %}
+
+{% include "agency/footer.html" %}

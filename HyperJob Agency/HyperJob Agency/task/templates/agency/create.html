@@ -1,0 +1,10 @@
+{% include "agency/header.html" %}
+
+<h2>{{page_title}}</h2>
+<form method="POST" action="">
+    {% csrf_token %}
+    <table>{{ form.as_table }}</table>
+    <input type="submit" value="Create" />
+</form>
+
+{% include "agency/footer.html" %}
